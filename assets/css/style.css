@@ -116,6 +116,7 @@ p{margin:0 0 10px}
 
 .pillbox{border:1px solid var(--border); border-radius:16px; padding:12px}
 .pills{display:flex; flex-wrap:wrap; gap:8px}
+.pills-gap{margin:6px 0 10px}
 .pills span{
   border:1px solid var(--border);
   padding:6px 10px;
