@@ -37,9 +37,8 @@ Use for automatic matching with job offers.
 | Tool | Notes |
 |------|-------|
 | ETL (Extract Transform Load) | Data Management for BI |
-| OLAP | Data Management for BI |
-| PowerBI | Data Management for BI |
 | SQL Server | Data Management for BI |
+<!-- | OLAP | Data Management for BI | -->
 <!-- | Pentaho | Data Management for BI | -->
 
 ### Machine Learning & Data Mining
@@ -98,9 +97,10 @@ Use for automatic matching with job offers.
 ### Data Visualization
 | Tool | Notes |
 |------|-------|
-| D3.js | Data Visualization & Visual Analytics |
 | HTML5 / CSS3 | Data Visualization & Visual Analytics |
 | Shiny (R) | EUMEPLAT Dashboard — public production (shinyapps.io) |
+| Dash (Python) | WhatDSApp Dashboard — Docker Deployment |
+<!-- | D3.js | Data Visualization & Visual Analytics | -->
 
 
 ### Geospatial / Mobility
@@ -203,8 +203,7 @@ Use for automatic matching with job offers.
 |--------------|--------|
 | Ollama | Deployment and management of open-source LLMs locally |
 | Open WebUI | User interface for Ollama |
-| LLaMA | Open-source model integrated in workflows |
-| Mistral | Open-source model integrated in workflows |
+| Qwen | Open-source model integrated in workflows |
 | Gemma | Open-source model (Google) |
 | Deepseek | Open-source model integrated in workflows |
 | Prompt engineering | Prompt design output evaluation |
@@ -359,14 +358,14 @@ Use for automatic matching with job offers.
 ## Keyword Cloud for Job Matching
 
 ```
-Hadoop Spark Hive Pig MongoDB ETL OLAP Pentaho PowerBI SQLServer
 Python R SQL KNIME Pandas Scikit-Learn NLTK Gensim Tweepy NumPy SciPy Matplotlib
 spaCy HuggingFace Transformers fine-tuning text-classification sentiment opinion-mining
 LLM Ollama LLaMA Mistral Gemma Deepseek prompt-engineering Open-WebUI Claude-Code
-D3 NodeJs Javascript HTML5 CSS3 Bootstrap4 Selenium REST-API Shiny Dash Plotly
+NodeJs Javascript HTML5 CSS3 Bootstrap4 Selenium REST-API Shiny Dash Plotly
+Hadoop Spark Hive Pig MongoDB ETL Pentaho SQLServer
 Docker Git cloud deployment fan-chart efficient-frontier AMELIA
 time-series portfolio-optimization Monte-Carlo SDSA stochastic-debt-sustainability ESG sovereign-debt
-Black-Scholes variance-reduction scenario-analysis sensitivity-analysis derivatives-pricing
+Black-Scholes variance-reduction scenario-analysis sensitivity-analysis derivatives-pricing/i
 network-analysis PostGIS QGIS GPS-trajectories agent-based-modeling
 clustering classification information-retrieval
 big-data distributed-computing NoSQL pipeline batch streaming

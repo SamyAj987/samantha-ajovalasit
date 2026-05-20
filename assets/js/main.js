@@ -71,7 +71,9 @@ const dict = {
     teachingTitle: "Teaching",
     teachCoursesTitle: "Courses",
     teachTutoringTitle: "Tutoring / Teaching support",
-    cvTitle: "CV"
+    cvTitle: "CV",
+    cvEng: "English",
+    cvIta: "Italiano"
   },
   it: {
     tagline: "Data Scientist · NLP & LLM · Ricerca Applicata",
@@ -142,7 +144,9 @@ const dict = {
     teachingTitle: "Didattica",
     teachCoursesTitle: "Corsi",
     teachTutoringTitle: "Tutorato / Supporto didattico",
-    cvTitle: "CV"
+    cvTitle: "CV",
+    cvEng: "English",
+    cvIta: "Italiano"
   }
 };
 
