@@ -14,6 +14,9 @@ const dict = {
     navService: "Service",
     navTalks: "Talks",
     navCV: "CV",
+    ctaText: "Open to Data Scientist / NLP-LLM Engineer roles — industry & remote-friendly.",
+    ctaSub: "Production apps shipped, LLM pipelines in the field, 2 papers with policy think tanks.",
+    ctaBtn: "Get in touch",
     aboutTitle: "About",
     aboutBody:
       "Data Scientist with a PhD in Economics, Management and Statistics. I build NLP pipelines, LLM-powered decision-support tools, and stochastic models — shipped to cloud production and published at Bruegel (EU think tank). Work spans judicial text analytics, sovereign debt risk, and real-time social media signals.",
@@ -47,6 +50,12 @@ const dict = {
       "Interactive dashboard supporting the EUMEPLAT \"Data clustering reports — Lessons from Media History\". Built with R/Shiny, deployed on shinyapps.io.",
     proj3:
       "NLP pipeline for Italian judicial text analysis — NER and text classification on court records to identify procedural bottlenecks and support judges' workflow optimization. Built with spaCy, HuggingFace Transformers, and Doccano.",
+    proj1Outcome: "Outcome: live on AMELIA cloud, used for scenario/funding decisions on public debt within the GRINS project.",
+    proj2Outcome: "Outcome: published dashboard backing an EU H2020 (EUMEPLAT) deliverable, in active use by the consortium.",
+    proj3Outcome: "Outcome: NER/classification pipeline handed to Just Smart project for judicial workflow analysis.",
+    repoTitle: "Recent GitHub activity",
+    repoNote: "Selected public repos — full history on GitHub.",
+    repoBtn: "View full GitHub profile",
     pubTitle: "Publications (selected)",
     pubNote: "Full list available as PDF.",
     pubPdfBtn: "Open publications PDF",
@@ -87,6 +96,9 @@ const dict = {
     navService: "Attività",
     navTalks: "Talk",
     navCV: "CV",
+    ctaText: "Disponibile per ruoli Data Scientist / NLP-LLM Engineer — industry, anche remoto.",
+    ctaSub: "App in produzione, pipeline LLM sul campo, 2 paper con think tank di policy.",
+    ctaBtn: "Contattami",
     aboutTitle: "Profilo",
     aboutBody:
       "Data Scientist con PhD in Economics, Management and Statistics. Costruisco pipeline NLP, strumenti di supporto decisionale e modelli stocastici — in produzione cloud e pubblicati su Bruegel (think tank UE). Ambiti: text analytics giuridico, rischio del debito sovrano e segnali social media in tempo reale.",
@@ -120,6 +132,12 @@ const dict = {
       "Dashboard interattiva a supporto dei report EUMEPLAT \"Data clustering reports — Lessons from Media History\". Sviluppata con R/Shiny, deploy su shinyapps.io.",
     proj3:
       "Pipeline NLP per analisi di testi giudiziari italiani — NER e classificazione su atti giudiziari per identificare colli di bottiglia e supportare il lavoro dei magistrati. Sviluppata con spaCy, HuggingFace Transformers e Doccano.",
+    proj1Outcome: "Risultato: in produzione su cloud AMELIA, usata per decisioni di scenario/finanziamento sul debito pubblico nel progetto GRINS.",
+    proj2Outcome: "Risultato: dashboard pubblicata a supporto di un deliverable EU H2020 (EUMEPLAT), in uso attivo dal consorzio.",
+    proj3Outcome: "Risultato: pipeline NER/classificazione consegnata al progetto Just Smart per l'analisi dei flussi giudiziari.",
+    repoTitle: "Attività GitHub recente",
+    repoNote: "Repo pubblici selezionati — storico completo su GitHub.",
+    repoBtn: "Vai al profilo GitHub completo",
     pubTitle: "Pubblicazioni (selezione)",
     pubNote: "Lista completa disponibile come PDF.",
     pubPdfBtn: "Apri PDF pubblicazioni",
@@ -171,3 +189,32 @@ if (btn) {
 }
 
 applyI18n();
+
+const repoGrid = document.getElementById("repoGrid");
+if (repoGrid) {
+  fetch("https://api.github.com/users/SamyAj987/repos?sort=updated&per_page=6")
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(repos => {
+      repoGrid.innerHTML = "";
+      repos.filter(r => !r.fork).slice(0, 6).forEach(r => {
+        const col = document.createElement("div");
+        col.className = "col-12 col-md-6";
+        col.innerHTML = `
+          <div class="repo-card">
+            <h4><a href="${r.html_url}" target="_blank" rel="noopener noreferrer">${r.name}</a></h4>
+            <p class="small">${r.description ? r.description : ""}</p>
+            <div class="pills">
+              ${r.language ? `<span>${r.language}</span>` : ""}
+              <span>★ ${r.stargazers_count}</span>
+            </div>
+          </div>`;
+        repoGrid.appendChild(col);
+      });
+      if (!repoGrid.children.length) {
+        repoGrid.innerHTML = '<p class="small">No public repos to show right now.</p>';
+      }
+    })
+    .catch(() => {
+      repoGrid.innerHTML = '<p class="small">GitHub repos unavailable — see profile link below.</p>';
+    });
+}
