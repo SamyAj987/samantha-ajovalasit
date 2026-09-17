@@ -1,0 +1,139 @@
+\PassOptionsToPackage{expansion=false}{microtype}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvcolor{blue}
+\moderncvstyle{casual}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scale=0.80, footskip=40.8pt]{geometry}
+
+% personal data
+\name{Samantha}{Ajovalasit}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \address{Via Salvatore Lo Forte, 23}{90138 - Palermo}{Italia}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+39~(375)~5318~660}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+\email{samanthaajovalasit@gmail.com}
+\social[linkedin]{samanthaajovalasit}
+\social[github]{SamyAj987}
+
+
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Profilo}
+\cvitem{}{Data Scientist con PhD in Economics, Management and Statistics, specializzata in {NLP, Large Language Models e quantitative risk modelling}. Sviluppo di pipeline testo end-to-end (estrazione, classificazione, fine-tuning) utilizzando spaCy e HuggingFace Transformers; deployment LLM via Ollama (LLaMA, Mistral, Deepseek). App decisionali full-stack in produzione cloud (WhatDSApp/AMELIA, EUMEPLAT/shinyapps.io). Ricerca pubblicata presso {Bruegel} (think tank UE) e riviste peer-reviewed.}
+
+% \section{Anagrafica}
+% \cvitem{Data di nascita}{$2\ settembre\ 1987$}
+% \cvitem{Luogo di nascita}{Palermo}
+% \cvitem{Nazionalità}{Italiana}
+% \cvitem{email}{samanthaajovalasit@gmail.com}
+% \cvitem{pec}{samanthaajovalasit@pec.it}
+
+\section{Esperienze Professionali}
+\cventry{2023 -- 2026}{\textbf{Ricercatrice RTD (a)}}{\textit{Università di Palermo}}{}{}{Progetto \textit{GRINS -- Growing Resilient, Inclusive and Sustainable}. Sviluppo di pipeline in molteplici ambienti per l’analisi di dati socioeconomici complessi; modellistica statistica e machine learning per supporto decisionale su politiche pubbliche. Sviluppo di app web interattiva (WhatDSApp) integrata nella piattaforma cloud AMELIA. Tracciato di avanzamento in Matematica per l’Azienda.}
+\cventry{2022 -- 2023}{\textbf{Assegnista di Ricerca}}{\textit{Università di Palermo}}{}{}{Progetto \textit{Just Smart -- ``Giustizia Smart: Strumenti e Modelli per Ottimizzare il Lavoro dei Giudici''}. Sviluppo di algoritmi per valutare e migliorare l'efficienza dei tribunali. Analisi di dati non strutturati dei tribunali; analisi NLP su documenti giudiziari italiani: estrazione dati, classificazione testo e sentiment analysis per identificare colli di bottiglia e proporre soluzioni data-driven.}
+
+\cventry{2021 -- 2022}{\textbf{Assegnista di Ricerca}}{\textit{Università Ca’ Foscari}}{\textit{Venezia}}{}{Progetto \textit{H2020 Grant 101004488 European Media Platform -- EUMEPLAT}. Sviluppo di algoritmi di analisi per esplorare la diffusione del sentimento anti-europeo in dati non strutturati.\\
+\textbf{Docente a contratto} -- Modulo supplementare \textit{Advanced Application of Computer Science for Cultural Heritage} -- Università Ca’Foscari Venezia, fondamenti di R e analisi di rete con training interattivo e coding.}
+
+\cventry{2017}{Internship}{RJC Soft s.r.l.}{Pisa}{}{\textit{Project Sprint}. Ho lavorato con il team \textit{R\&D}, dove ho analizzato, utilizzando Python e QGIS, il sistema del traffico urbano nel comune di Pisa.}
+
+
+\newpage
+\section{Titoli di studio e Formazione}
+\cventry{2018 -- 2020}{\textbf{Dottorato di Ricerca in Economics, Management and Statistics}}{\textit{Università di Messina}}{XXXIII Ciclo}{EQF 8}{Tesi: ``Disorientation towards routine immunization, COVID-19 anxiety, and propensity to vaccinate. Analysis based on Twitter data in Italy''. Discussione: 21 Dicembre 2020.\\
+Analisi NLP su larga scala di dati Twitter italiani: {sentiment analysis, text classification e fine-tuning di modelli} per rilevare l'esitazione vaccinale e misurare l'impatto della comunicazione politica sulla propensione vaccinale.}
+
+\cventry{2017 -- 2018}{\textbf{Master di II livello in Big Data Analytics \& Social Mining}}{\textit{Università di Pisa}}{}{EQF 7}{Tesi: \textit{Analisi del Traffico in Ambienti Urbani via Traiettorie GPS}. Discussione: 4 Maggio 2018. Copre data mining, machine learning, analisi dati e visualizzazione, network science, computational social science, etica, data journalism. Focus su big data management, knowledge extraction e decision support - (Python, R, SQL, Knime).}
+
+\cventry{2013 -- 2016}{\textbf{Laurea Magistrale in Economia}}{\textit{Università di Pisa, Scuola Superiore Sant'Anna}}{EQF 7}{}{Formazione avanzata in economia con strumenti quantitativi e statistici.
+Tesi: \textit{Option Pricing with Monte Carlo Simulation and Variance Reduction Technique}. Discussione: 5 Luglio 2016.}
+
+\cventry{2007 -- 2012}{\textbf{Laurea Triennale in Economia e Finanza}}{\textit{Università di Palermo}}{}{EQF 6}{Tesi: \emph{``Cessione dei Crediti e Cartolarizzazione''}, Discussione: 5 Novembre 2012.}
+
+\section{Formazione Complementare}
+\cventry{2022}{Summer School in Network Econometrics}{Italian Society of Econometrics - Ca' Foscari Università di Venezia}{}{}{Il corso mira a fornire i fondamenti dell'econometria di rete con particolare riferimento al network mapping e visualizzazione, ai metodi di estrazione, ai modelli multi-layer e alle loro applicazioni in finanza.}
+
+\cventry{2019}{\textbf{Summer School in Data Science and Epidemic Models}}{Università di Trento}{}{}{Analisi dei dati complessi, tracciamento digitale, mobilità umana, metodi computazionali e analisi dei social media.}
+\cventry{2019}{Fundamental of Digital and Computational Demography}{Max Planck Institute for Demographic Research}{Rostock}{}{Il corso fornisce strumenti per migliorare l'analisi demografica nei metodi demografici e delle scienze sociali, nonché per interpretare nuovi tipi di dati, con particolare focus sui big data.}
+
+\cventry{2018}{\textbf{Summer School on Clustering, Data Analysis and Visualization of Complex Data}}{Università di Catania}{}{}{Clustering, classificazione, visualizzazione di dataset di grandi dimensioni; analisi numerica e piattaforme cloud-computing.}
+
+\section{Attività di Didattica}
+\cventry{2023 -- 2026}{Docente del corso \textit{Matematica per l’Azienda}}{Università di Palermo}{}{}{Corso di Laurea in Economia e Amministrazione Aziendale. Qualifica: Docente titolare del corso.}{}
+\cventry{2018 -- 2020}{Tutorato Senior}{\textit{Università di Catania}}{}{}{Corso: \textit{Data Science e Processi Demografici}. Modulo dedicato a {NLP, sentiment analysis e integrazione REST API} per analisi dati social media -- Twitter.}
+\cventry{2018 -- 2020}{Tutorato Senior}{\textit{Università di Catania}}{}{}{Corso: \textit{Statistica Economica}, Corso di Laurea in Economia Aziendale.}
+\pagebreak
+\section{Rilascio di Software e Strumenti}
+\cvitem{WhatDSApp}{Web-app interattiva per la valutazione del debito pubblico. Integra analisi di sostenibilità per creare scenari di finanziamento ottimali e strategie. Piattaforma AMELIA, progetto GRINS: \url{https://ameliadp.grins.it/}}
+
+\cvitem{Dashboard}{Dashboard interattiva per il progetto EUMEPLAT -- Rapporti di clustering dei dati. \url{https://eumeplat.shinyapps.io/EumeplatDashboard/}}
+
+\section{Competenze Tecniche}
+\cvitem{LLM \& AI Generativa}{Deployment e gestione di Large Language Models via Ollama con interfaccia Open WebUI. Integrazione di modelli open-source (LLaMA, Mistral, Gemma, Deepseek) nei workflow analitici. Fine-tuning supervisionato su corpora testuali (Twitter, documenti giudiziari, media europei). Prompt engineering, valutazione dell'output e integrazione LLM in pipeline di produzione. Claude Code (CLI) per sviluppo assistito da AI in ambienti agentic.}
+
+\cvitem{NLP \& ML}{spaCy, scikit-learn, NLTK, Transformers, Gensim, Word2Vec/Doc2Vec per text processing (estrazione dati, classificazione, riconoscimento di topic, clustering, sentiment analysis, opinion mining). Pipeline di annotazione: Doccano, spaCy DocBin, spaCy CLI (training from scratch, it\_core\_news\_lg). NLP giuridico italiano: NER su corpus giudiziario (displacy). Sentiment scoring: VADER, SentiWordNet. Feature extraction: TF-IDF, CountVectorizer. Raccolta dati via web scraping (Selenium), REST API, Tweepy.}
+
+\cvitem{Big Data \& Data Engineering}{Apache Hadoop (MapReduce), Spark. NoSQL: MongoDB. Database relazionali e spaziali: SQL/MySQL. ETL pipeline. Architettura pipeline end-to-end: data ingestion, trasformazione, analisi, output.}
+
+\cvitem{Web App \& Visualizzazione Dati}{Applicazione web full-stack costruita da zero: Bootstrap 4, HTML/CSS, Plotly/Dash, Shiny. Validazione input, visualizzazione in tempo reale. Output finanziari: fan charts, efficient frontier, grafici di variabili endogene/esogene. Dashboard pubbliche.}
+
+\cvitem{Finanza Quantitativa \& Modelli Stocastici}{Simulazione Monte Carlo (pseudo) con tecniche di variance reduction. Stochastic Debt Sustainability Analysis (SDSA). Modellistica ESG risk factor, scenario analysis, sensitivity analysis. Ottimizzazione di portafoglio (efficient frontier, CVaR). Option Pricing. Insegnamento di Matematica Finanziaria. API dati finanziari: Refinitiv Eikon (dati obbligazionari, curve dei rendimenti, credit spreads). Network econometrics.}
+
+% Spatial econometrics — uncomment for DS/econometrics/spatial roles
+%\cvitem{Spatial Econometrics}{Spatial weights matrix (Queen, Rook, KNN) via libpysal. Spatial lag panel regression with fixed effects via spreg. Shapefile processing in Python (GIS boundaries, international panel data 1960--2015). Spatial panel models on country-level economic and human development indicators.}
+
+\cvitem{Linguaggi \& Strumenti}{Python (advanced), R, MATLAB, Stata, GAMS, Gretl, Knime. REST APIs, JSON, Docker, Git/GitHub. Ambienti: VS Code, Jupyter, \LaTeX, LibreOffice. Network analysis e visualizzazione (R, Python). QGIS.}
+
+\cvitem{Sistemi \& Infrastruttura}{Linux (Arch, Ubuntu), macOS, Windows. Amministrazione workstation, shell scripting. Sviluppo remoto via VS Code Remote SSH su macchine Linux. Piattaforme cloud (AMELIA, GRINS). Esperienza sysadmin in ambienti di ricerca computazionale.}
+
+\cvitem{Lingue}{Italiano (madrelingua), Inglese (B2 -- intermedio avanzato), Francese (B1 -- intermedio).}
+
+
+\section{Pubblicazioni Scientifiche}
+\cvitem{2025}{\textbf{Are bad governments threat to sovereign defaults? Effects of political risk on debt sustainability.} Working Paper 01/2025, Bruegel. \sloppy\href{https://www.bruegel.org/working-paper/are-bad-governments-threat-sovereign-defaults-effects-political-risk-debt}{Bruegel.org}}
+\cvitem{2025}{\textbf{How much of threat to US debt sustainability is Trump's One Big Beautiful Bill Act?} Analysis Report. Bruegel. \sloppy\href{https://www.bruegel.org/analysis/how-much-threat-us-debt-sustainability-trumps-one-big-beautiful-bill-act}{Bruegel.org}}
+\cvitem{2025}{\textbf{ESG factors and sovereign debt.} Economia Italiana 46(3), 145-164. DOI: 10.57621/EI2024-03-I-06}
+\cvitem{2024}{\textbf{Debt Sustainability in Context of Population Ageing: Risk Management Approach.} Risks 12(12). \sloppy\url{https://www.mdpi.com/2227-9091/12/12/188}}
+\cvitem{2022}{\textbf{H2020 European Media Platform - EUMEPLAT - Data clustering reports } - {\href{https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5_Data-Clustering-Report.pdf}{https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5\_Data-Clustering-Report.pdf}}}
+\cvitem{2021}{\textbf{Evidence of disorientation towards immunization on online social media.} PlosOne. \sloppy\url{https://doi.org/10.1371/journal.pone.0253569}}
+
+
+
+% \cvitem{\textbf{Report}}{Ajovalasit S., Miconi A., Zollo F. (2022) \textit{H2020 European Media Platform - EUMEPLAT - Data clustering reports – Lessons from Media History} February 2022 available at \href{https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5_Data-Clustering-Report.pdf}{https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5\_Data-Clustering-Report.pdf}}
+% \cvitem{Web-App}{\textbf{WhatDSApp} - The web application \textbf{WhatDSApp} is designed to enhance the assessment and management of public debt, integrating advanced Stochastic Debt Sustainability Analysis (SDSA) models to create detailed economic scenarios and optimal debt financing strategies. It is available under the GRINS online platform AMELIA available at \href{https://ameliadp.grins.it/}{\textbf{https://ameliadp.grins.it/}}}
+% \cvitem{Web Dashboard}{\textbf{Report Eumeplat Project} - \textit{Data clustering reports - Lessons from Media History} available \href{https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5_Data-Clustering-Report.pdf}{\textbf{here}} and the dashboard available at \href{https://eumeplat.shinyapps.io/EumeplatDashboard/}{\textbf{https://eumeplat.shinyapps.io/EumeplatDashboard/}}}
+
+
+% \section{Presentation and Seminars}
+% \cvitem{\textbf{Presentation}}{GRETA 24th International Conference in Credit Risk Evaluation Designed for Institutional Targeting in Finance - 2025 - conference - \textit{Are bad governments a threat to sovereign defaults? The effects of political risk on debt sustainability}, 25-26 September 2025, Venice.}
+% \cvitem{\textbf{Presentation}}{AMASES (Italian Association for Mathematics Applied to Social and Economic Sciences) - XLIX Annual Conference 2025 - \textit{Debt Sustainability in the Context of Population Ageing: A Risk Management Approach}, 11-13 September 2025, Florence.}
+% \cvitem{\textbf{Seminar}}{DEM Seminars - \textit{Are Bad Governments a Threat to Sovereign Defaults? The Effects of Political Risk on Debt Sustainability}, University of Pisa, November 6, 2024.}
+% \cvitem{\textbf{Presentation}}{AMASES (Italian Association for Mathematics Applied to Social and Economic Sciences) - XLVIII Annual Conference 2024 - \textit{Political risk and sovereign debt sustainability}, 5 - 7 September 2024, Ischia.}
+% \cvitem{\textbf{Presentation}}{SIDE (Italian Society of Law and Economics) Lumsa University - 18$^th$ Annual Conference 2022 - \textit{The Impact of Ratification of Human Rights Treaties on Economic Inequality}, 15-16 December 2022, Palermo.}
+% \cvitem{\textbf{Presentation}}{Data Science \& Social Research - 2019 Bicocca University, Milano. Working Paper in \textit{Investigating Vaccine Sentiment In Italy Over A Period Of Ambiguous Immunization Policy}. February 4-5, 2019.}
+% \cvitem{\textbf{Presentation}}{\textit{POPDAYS}- Giornate di studio sulla Popolazione 2019. Bocconi University - Milano: Working paper in \textit{An Analysis of Twitter Vaccine Sentiment in Response to Ambiguity in the Latest Vaccine Policies in Italy}. 24-26 January 2019}
+% \cvitem{}{\textbf{Presentation} - EASP European Population Conference - 2020 \textit{Evidence of distrust and disorientation towards immunization on online social media after contrasting political communication on vaccines. Results from an analysis of Twitter data in Italy. Health and Wellbeing in a Digital World session}. June 22-27, 2020. Canceled due to COVID-19 Pandemic.}
+% \cvitem{}{\textbf{Presentation} - PAA (Population Association of America) 2020 - Flash Session. \textit{Are the last eighteen months of contrasting vaccine policy in Italy creating distrust and disorientation amongst the public? Results from sentiment analysis of Twitter data.} April 22-25, 2020, Washington D.C. (USA). Canceled due to COVID-19 Pandemic.}
+
+\section{Affiliazioni ad Associazioni Scientifiche}
+\cventry{}{AMASES}{}{Associazione per la Matematica Applicata alle Scienze Economiche e Sociali. Membro dal 2023.}{}{}
+
+\section{Membro di Comitati Scientifici e Organizzativi}
+\cvitem{}{\textbf{Membro del Comitato Organizzativo} - XXVI Quantitative Finance Workshop - Università di Palermo - Il workshop mira a riunire il mondo accademico e industriale per stimolare discussioni e interazioni tra ricercatori e professionisti sui vari aspetti teorici e applicati della Quantitative Finance. 15-17 Aprile 2025}
+\cvitem{}{\textbf{Membro del Comitato Scientifico} - The international Conference on Frontiers in Stochastic Modelling for Finance - Università di Palermo - Questa conferenza mira a rafforzare le connessioni esistenti e promuovere nuove collaborazioni tra ricercatori nei campi della modellistica per la finanza, del controllo stocastico e della quantitative finance. 25-27 Ottobre 2023}
+\cvitem{}{\textbf{Membro del Comitato Scientifico} - X Conference of International Association for Tourism Economics - IATE - Università di Palermo, 23-26 Giugno 2026 (prossimamente)}
+
+% \section{Social skills and competences}
+% \cvitem{}{Good communication skills and organizational skills practiced during the activity of Professor and as Senior Tutor} %prior as out-bound operator in a Call-Center
+\end{document}
