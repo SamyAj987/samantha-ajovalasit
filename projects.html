@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Samantha Ajovalasit</title>
-  <meta name="description" content="Tools and research outputs" />
+  <title>Projects | Samantha Ajovalasit, PhD</title>
+  <meta name="description" content="Case studies: WhatDSApp risk-scenario web app, EUMEPLAT media dashboard, judicial efficiency analytics, social media NLP." />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -21,28 +21,21 @@
   <header class="site-header">
     <div class="container site-container header-inner">
       <div>
-        <h1 class="title">Samantha Ajovalasit</h1>
-        <p class="subtitle" data-i18n="tagline">Research • Data Science • STAT-04</p>
-        <p class="small" data-i18n="currentRole">
-          Researcher — University of Palermo
-        </p>
+        <h1 class="title">Samantha Ajovalasit, PhD</h1>
+        <p class="subtitle" data-i18n="tagline">Data Scientist · NLP &amp; LLM · Quantitative Risk</p>
+        <p class="small" data-i18n="location">Palermo, Italy · open to Italy, EU and remote</p>
       </div>
-
       <div class="header-actions">
         <button class="lang" id="langToggle" aria-label="Toggle language">IT</button>
         <a class="btn-custom" href="index.html#contact" data-i18n="contactBtn">Contact</a>
       </div>
     </div>
-
     <nav class="nav">
       <div class="container site-container nav-inner">
         <a href="index.html" data-i18n="navAbout">About</a>
-        <a href="interests.html" data-i18n="navInterests">Research</a>
-        <a href="teaching.html" data-i18n="navTeaching">Teaching</a>
-        <a href="publications.html" data-i18n="navPublications">Publications</a>
         <a href="projects.html" class="active" data-i18n="navProjects">Projects</a>
-        <a href="service.html" data-i18n="navService">Service</a>
-        <a href="talks.html" data-i18n="navTalks">Talks</a>
+        <a href="experience.html" data-i18n="navExperience">Experience</a>
+        <a href="publications.html" data-i18n="navPublications">Publications</a>
         <a href="cv.html" data-i18n="navCV">CV</a>
       </div>
     </nav>
@@ -50,58 +43,105 @@
 
   <main id="content" class="container site-container">
 
-    <!-- PROJECTS / APPS -->
     <section id="projects" class="panel">
-      <h2 data-i18n="projectsTitle">Tools & outputs</h2>
+      <h2 data-i18n="projectsTitle">Projects</h2>
+      <p class="small" data-i18n="projectsNote">Each case: the problem, what I built, and what came out of it.</p>
       <div class="row g-3">
-        <div class="col-12 col-md-6">
-          <h3>WhatDSApp</h3>
-          <p data-i18n="proj1">
-            Interactive web app for public debt evaluation: sustainability analysis, scenario building, and optimal funding strategies.
-            Available on the GRINS AMELIA platform.
-          </p>
-          <div class="pills" class="pills-gap">
-            <span>Python</span><span>Plotly / Dash</span><span>Bootstrap</span><span>Docker</span><span>AMELIA cloud</span>
-          </div>
-          <p class="small">
-            <a href="https://ameliadp.grins.it/" target="_blank" rel="noopener noreferrer">ameliadp.grins.it</a>
-          </p>
+
+        <div class="col-12">
+          <article class="case">
+            <h3>WhatDSApp <span class="status" data-i18n="live">Live</span></h3>
+            <p class="meta" data-i18n="p1Meta">Sovereign debt risk · GRINS project · 2023–2026</p>
+            <dl>
+              <dt data-i18n="lblProblem">Problem</dt>
+              <dd data-i18n="p1Problem">Economists needed to test how fiscal choices and market shocks change the risk profile of public debt, without running simulation code themselves.</dd>
+              <dt data-i18n="lblBuilt">What I built</dt>
+              <dd data-i18n="p1Built">A full-stack decision-support web app on top of a stochastic simulation engine (Monte Carlo, scenario and sensitivity analysis). Drag-and-drop multi-sheet Excel ingestion, market data from FactSet and Refinitiv Eikon, fan charts and CVaR efficient-frontier plots. Containerised with Docker and deployed on the AMELIA cloud platform.</dd>
+              <dt data-i18n="lblResult">Result</dt>
+              <dd data-i18n="p1Result">Adopted by GRINS consortium partners for live debt-scenario analysis; the models behind it support a peer-reviewed paper (Risks 2024) and two Bruegel publications.</dd>
+            </dl>
+            <div class="pills pills-gap">
+              <span>Python</span><span>Plotly / Dash</span><span>Bootstrap</span><span>Docker</span>
+              <span>Monte Carlo</span><span>CVaR</span><span>Cloud</span>
+            </div>
+            <p class="small"><a href="https://ameliadp.grins.it/" target="_blank" rel="noopener noreferrer">ameliadp.grins.it</a></p>
+          </article>
         </div>
+
         <div class="col-12 col-md-6">
-          <h3>EUMEPLAT Dashboard</h3>
-          <p data-i18n="proj2">
-            Interactive dashboard supporting the EUMEPLAT "Data clustering reports — Lessons from Media History".
-          </p>
-          <div class="pills" class="pills-gap">
-            <span>R</span><span>Shiny</span><span>shinyapps.io</span>
-          </div>
-          <p class="small">
-            <a href="https://eumeplat.shinyapps.io/EumeplatDashboard/" target="_blank" rel="noopener noreferrer">eumeplat.shinyapps.io/EumeplatDashboard</a>
-          </p>
+          <article class="case">
+            <h3>EUMEPLAT Dashboard <span class="status" data-i18n="live">Live</span></h3>
+            <p class="meta" data-i18n="p2Meta">Media market analytics · EU H2020 · 2021–2022</p>
+            <dl>
+              <dt data-i18n="lblProblem">Problem</dt>
+              <dd data-i18n="p2Problem">Measure how far European media markets converged over 40 years, and make the evidence explorable for a non-technical consortium.</dd>
+              <dt data-i18n="lblBuilt">What I built</dt>
+              <dd data-i18n="p2Built">Clustering analysis across countries and media (Press, Radio, TV, OTT, ICT) and a public interactive dashboard with choropleth maps and descriptive statistics.</dd>
+              <dt data-i18n="lblResult">Result</dt>
+              <dd data-i18n="p2Result">Published as EU H2020 deliverable D1.5, dashboard publicly available.</dd>
+            </dl>
+            <div class="pills pills-gap">
+              <span>R</span><span>Shiny</span><span>Clustering</span><span>Choropleth</span>
+            </div>
+            <p class="small">
+              <a href="https://eumeplat.shinyapps.io/EumeplatDashboard/" target="_blank" rel="noopener noreferrer">Dashboard</a> ·
+              <a href="https://www.eumeplat.eu/wp-content/uploads/2022/03/D1.5_Data-Clustering-Report.pdf" target="_blank" rel="noopener noreferrer">Report D1.5</a>
+            </p>
+          </article>
         </div>
+
         <div class="col-12 col-md-6">
-          <h3>Just Smart — Judicial NLP</h3>
-          <p data-i18n="proj3">
-            NLP pipeline for Italian judicial text analysis — NER and text classification on court records
-            to identify procedural bottlenecks and support judges' workflow optimization.
-          </p>
-          <div class="pills" class="pills-gap">
-            <span>spaCy</span><span>HuggingFace</span><span>Doccano</span><span>Python</span>
-          </div>
+          <article class="case">
+            <h3 data-i18n="p3Title">Judicial efficiency analytics</h3>
+            <p class="meta" data-i18n="p3Meta">Just Smart project · University of Palermo · 2022–2023</p>
+            <dl>
+              <dt data-i18n="lblProblem">Problem</dt>
+              <dd data-i18n="p3Problem">Courts in western Sicily lacked a measurable view of where cases stall.</dd>
+              <dt data-i18n="lblBuilt">What I built</dt>
+              <dd data-i18n="p3Built">Data retrieval from the Italian judicial repository (SICID) and a pipeline measuring process efficiency, with queueing analysis and survival models; NLP on unstructured judicial documents.</dd>
+              <dt data-i18n="lblResult">Result</dt>
+              <dd data-i18n="p3Result">Bottlenecks and processing times quantified and turned into data-driven recommendations for court administration.</dd>
+            </dl>
+            <div class="pills pills-gap">
+              <span>Python</span><span>Survival analysis</span><span>Queueing</span><span>spaCy</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12">
+          <article class="case">
+            <h3 data-i18n="p4Title">Social media NLP: vaccine hesitancy</h3>
+            <p class="meta" data-i18n="p4Meta">PhD research · University of Messina · 2018–2020</p>
+            <dl>
+              <dt data-i18n="lblProblem">Problem</dt>
+              <dd data-i18n="p4Problem">Does contradictory political communication change public attitudes to vaccination?</dd>
+              <dt data-i18n="lblBuilt">What I built</dt>
+              <dd data-i18n="p4Built">A streaming collection pipeline from the Twitter API (Tweepy) and an NLP workflow for sentiment analysis and text classification on Italian tweets, with polarity time series aligned to political events.</dd>
+              <dt data-i18n="lblResult">Result</dt>
+              <dd data-i18n="p4Result">Measured disorientation in the public debate after political announcements; published in PLoS ONE (2021).</dd>
+            </dl>
+            <div class="pills pills-gap">
+              <span>Python</span><span>REST API</span><span>NLTK</span><span>spaCy</span>
+              <span>Sentiment analysis</span><span>Time series</span>
+            </div>
+            <p class="small"><a href="https://doi.org/10.1371/journal.pone.0253569" target="_blank" rel="noopener noreferrer">PLoS ONE paper</a></p>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section id="github" class="panel">
+      <h2 data-i18n="repoTitle">Recent GitHub activity</h2>
+      <p class="small" data-i18n="repoNote">Latest public repositories.</p>
+      <div class="row g-3" id="repoGrid"></div>
+      <p class="actions" style="margin-top:10px">
+        <a class="btn-custom ghost" href="https://github.com/SamyAj987" target="_blank" rel="noopener noreferrer" data-i18n="repoBtn">View full GitHub profile</a>
+      </p>
     </section>
 
     <footer class="footer">
       <p class="small">© <span id="year"></span> Samantha Ajovalasit</p>
     </footer>
-
   </main>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
 </body>
 </html>
