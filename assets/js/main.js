@@ -4,7 +4,7 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 const dict = {
   en: {
     tagline: "Data Scientist, Risk Management and Economist - Public Debt Sustainability, Network Analysis, Inequality and Online Social Media",
-    location: "Palermo, Italy",
+    location: "Conegliano (TV), Italy",
     contactBtn: "Contact me",
     navAbout: "About",
     navProjects: "Projects",
@@ -130,7 +130,7 @@ const dict = {
   },
   it: {
     tagline: "Data Scientist, Risk Management ed Economista - Sostenibilità del Debito Pubblico, Network Analysis, Disuguaglianza e Social Media",
-    location: "Palermo, Italia",
+    location: "Conegliano (TV), Italia",
     contactBtn: "Contattami",
     navAbout: "Profilo",
     navProjects: "Progetti",
